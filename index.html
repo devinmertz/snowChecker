@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-style="background">
+	<nav class="navbar navbar-inverse">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#/" ng-click="background={'background-image': 'url(snowboard.jpg)'}">Home</a></li>
+			<li><a href="#/playlist" ng-click="background={'background-image': 'url(mtbaker.jpg)'}">Washington</a></li>
+			<li><a href="#/discover" ng-click="background={'background-image': 'url(mthood.jpg)'}">Oregon</a></li>
+		</ul>
+	</nav> 
+	
+	<div ng-view></div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	<script src="app.js"></script>
+	<Script src="/controllers/homeController.js"></Script>
+	<Script src="/controllers/washingtonController.js"></Script>
+	<Script src="/controllers/oregonController.js"></Script>
+	<script src="waSnowService.js"></script>
+	<script src="orSnowService.js"></script>
+	<script src="tempFilter.js"></script>
+	
+</body>
+
+</html>

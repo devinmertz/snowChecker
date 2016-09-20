@@ -1,0 +1,72 @@
+body {
+	background-image: url("snowboard.jpg");
+    background-size: cover;
+	font-family:serif;
+}
+
+
+#top {
+	color: aliceblue;
+
+	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+/*
+#ho {
+	background: url(snowboard.jpg) no-repeat center center fixed;
+	position: fixed;
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 100%;
+}
+*/
+
+/*
+#wa {
+	background: url(mtbaker.jpg) no-repeat center center fixed;
+	position: fixed;
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 100%;
+}
+*/
+
+/*
+#or {
+	background: url(mthood.jpg) no-repeat center center fixed;
+	position: fixed;
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 100%;
+}
+*/
+
+#box {
+	background-color: rgba(5, 4, 2, 0.7);
+/*	width: 750px;*/
+/*	height: 400px;*/
+/*	margin-left: 250px;*/
+/*	margin-right: 250px;*/
+	padding: 15px;
+	text-align: center;
+	padding-top: 80px;
+	color: aliceblue;
+	display: inline-block;
+	
+}
+
+.form-control {
+	display: inline-block;
+	width: 200px;
+	align-content: center;
+	padding-left: 300px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+}
