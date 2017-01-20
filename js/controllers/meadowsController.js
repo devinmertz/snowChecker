@@ -1,14 +1,15 @@
 var app = angular.module("MainApp");
 
-app.controller("oregonController", ["$scope", "orSnowService", function ($scope, orSnowService) {
-$scope.title = "this is the oregon page";
+app.controller("meadowsController", ["$scope", "meadowsService", function ($scope, meadowsService) {
+$scope.title = "Mt Hood Meadows, OR";
 
 $scope.scale;
 
 $scope.getWeatherData = function () {
-orSnowService.getWeather().then(
+meadowsService.getWeather().then(
 	function (weatherData) {
 		$scope.weatherData = weatherData;
+		console.log(weatherData);
 	}
 
 )

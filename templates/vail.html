@@ -1,11 +1,10 @@
 
-
-
-<div class="container-fluid" id="or">
+<div class="container-fluid" id="wa">
 	<div class="row">
 		<div class="col-xs-4"></div>
 		<div id="top" class="col-xs-4">
-			<h1>Mt Hood</h1></div>
+			<h1>{{title}}</h1>
+			</div>
 		<div class="col-xs-4"></div>
 	</div>
 	<div class="row">
@@ -15,7 +14,7 @@
 			<h2> {{weatherData.currently.summary}}</h2>
 			<h3>Wind Speed: {{weatherData.currently.windSpeed}}</h3>
 			<h3> {{weatherData.daily.summary}}</h3>
-
+			
 			<br>
 			<select class="form-control" ng-change="" name="" id="tempSelect" ng-model="scale" ng-options="scale as scale.name for scale in degreeScales">
 				<option value="">Select Scale</option>

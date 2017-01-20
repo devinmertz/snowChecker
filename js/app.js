@@ -11,14 +11,31 @@ app.config(function ($routeProvider) {
 			controller: "homeController"
 
 		})
-		.when("/playlist", {
-			templateUrl: "/templates/washington.html",
-			controller: "washingtonController"
+		.when("/mammoth", {
+			templateUrl: "/templates/mammoth.html",
+			controller: "mammothController"
 		})
-		.when("/discover", {
-			templateUrl: "/templates/oregon.html",
-			controller: "oregonController"
-		}).otherwise("/", {
+		.when("/vail", {
+			templateUrl: "/templates/vail.html",
+			controller: "vailController"
+		})
+		.when("/bachelor", {
+			templateUrl: "/templates/bachelor.html",
+			controller: "bachelorController"
+		})
+		.when("/meadows", {
+			templateUrl: "/templates/meadows.html",
+			controller: "meadowsController"
+		})
+		.when("/baker", {
+			templateUrl: "/templates/baker.html",
+			controller: "bakerController"
+		})
+		.when("/jackson", {
+			templateUrl: "/templates/jackson.html",
+			controller: "jacksonController"
+		})
+		.otherwise("/", {
 			templateUrl: "/templates/home.html",
 			controller: "homeController"
 
